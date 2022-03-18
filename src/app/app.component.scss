@@ -22,13 +22,16 @@
       flex: 8;
     }
   }
+  .contenedor-pie{
+    flex: auto;
+  }
 }
 
 //** DISPLAY GRID **//
 
 .contenedor-principal-grid{
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   .contenedor-cabecera{
     background-color: yellowgreen;
   }
@@ -42,6 +45,9 @@
     .contenedor-tabla{
       background-color: cadetblue;
     }
+  }
+  .contenedor-pie{
+    background-color: antiquewhite;
   }
 }
 
@@ -76,8 +82,26 @@
     .contenedor-tabla{
       height: 100%;
       overflow-y: hidden;
+      display: grid;
+      grid-template-rows: 6fr 4fr;
       padding: 10px;
+      gap: 10px;
+      .parte-arriba{
+        background-color: yellowgreen;
+        height: 100%;
+        overflow-y: auto;
+      }
+      .parte-abajo{
+        background-color: red;
+        height: 100%;
+        overflow-y: auto;
+      }
     }
+  }
+
+  .contenedor-pie{
+    height: 20px;
+    max-height: 20px;
   }
 }
 

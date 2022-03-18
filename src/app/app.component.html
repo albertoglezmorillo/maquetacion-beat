@@ -11,9 +11,19 @@
       </div>
     </div>
     <div class="contenedor-tabla">
-      <div class="box-tipico-con-colores-traslucidos">
-        <h1 *ngFor="let item of datos">DATO {{item}}</h1>
+      <div class="parte-arriba">
+        <div class="box-tipico-con-colores-traslucidos">
+          <h1 *ngFor="let item of datos">DATO {{item}}</h1>
+        </div>
+      </div>
+      <div class="parte-abajo">
+        <div class="box-tipico-con-colores-traslucidos">
+          <h3 *ngFor="let item of datos">DATO {{item}}</h3>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="contenedor-pie">
+
   </div>
 </div>
